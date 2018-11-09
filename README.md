@@ -59,7 +59,7 @@ unseenstars-spark-assembly-1.0.jar
  <tr>
     <td><tt>spark.custom.db.type</tt></td>
     <td>No</td>
-    <td><tt>redshift<tt></td>
+    <td><tt>redshift</tt></td>
     <td>The output database type (<tt>redshift</tt> or <tt>snowflake</tt>)</td>
  </tr>
 
@@ -123,8 +123,8 @@ unseenstars-spark-assembly-1.0.jar
     <td><tt>yelp_user</tt></td>
     <td>1.5M</td>
     <td>80MB</td>
-    <td>42.8MB</td>
-    <td>98s</td>
+    <td><b>42.8MB</b></td>
+    <td><b>98s</b></td>
     <td>107s</td>
  </tr>
 
@@ -132,17 +132,17 @@ unseenstars-spark-assembly-1.0.jar
     <td><tt>yelp_business</tt></td>
     <td>188.6K</td>
     <td>252MB</td>
-    <td>18MB</td>
+    <td><b>18MB</b></td>
     <td>23s</td>
-    <td>20s</td>
+    <td><b>20s</b></td>
  </tr>
 
  <tr>
     <td><tt>yelp_business_tip</tt></td>
     <td>1.2M</td>
     <td>124MB</td>
-    <td>63.9MB</td>
-    <td>30s</td>
+    <td><b>63.9MB</b></td>
+    <td><b>30s</b></td>
     <td>31s</td>
  </tr>
 
@@ -150,8 +150,8 @@ unseenstars-spark-assembly-1.0.jar
     <td><tt>yelp_business_checkin</tt></td>
     <td>4.2M</td>
     <td>80MB</td>
-    <td>18.9MB</td>
-    <td>99s</td>
+    <td><b>18.9MB</b></td>
+    <td><b>99s</b></td>
     <td>108s</td>
  </tr>
 
@@ -159,17 +159,17 @@ unseenstars-spark-assembly-1.0.jar
     <td><tt>yelp_business_review</tt></td>
     <td>5.8M</td>
     <td>2.3GB</td>
-    <td>1.9GB</td>
+    <td><b>1.9GB</b></td>
     <td>412s</td>
-    <td>339s</td>
+    <td><b>339s</b></td>
  </tr>
 
  <tr>
     <td><tt>yelp_business_review_words</tt></td>
     <td>257.6M</td>
     <td>4.1GB</td>
-    <td>1.1GB</td>
-    <td>736s</td>
+    <td><b>1.1GB</b></td>
+    <td><b>736s</b></td>
     <td>831s</td>
  </tr>
 
@@ -177,8 +177,8 @@ unseenstars-spark-assembly-1.0.jar
     <td><tt>yelp_business_review_sentiment</tt></td>
     <td>1.8M</td>
     <td>184MB</td>
-    <td>136.6MB</td>
+    <td><b>136.6MB</b></td>
     <td>85s</td>
-    <td>75s</td>
+    <td><b>75s</b></td>
  </tr>
 </table>
