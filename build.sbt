@@ -1,7 +1,7 @@
 name := "unseenstars-spark"
 
 // app version
-version := "0.1"
+version := "1.0"
 
 // scala version
 scalaVersion := "2.11.12"
@@ -21,7 +21,9 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % spVersion % "provided",
   "com.amazon.redshift" % "redshift-jdbc42-no-awssdk" % "1.2.16.1027",
   "com.databricks" %% "spark-csv" % "1.5.0",
-  "com.databricks" %% "spark-redshift" % "3.0.0-preview1"
+  "com.databricks" %% "spark-redshift" % "3.0.0-preview1",
+  "net.snowflake" %% "spark-snowflake" % "2.4.9",
+  "net.snowflake" % "snowflake-jdbc" % "3.6.16"
 )
 
 // include dependencies at runtime
