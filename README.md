@@ -7,14 +7,30 @@ Spark JAR to load yelp data into Redshift
 
 Spark SQL is able to store structured data in-memory for efficient processing. Our use case is to load source data from S3 to a Spark DataFrame, perform some processing, and load the DataFrame into an OLAP database.
 
+## Requirements
+
+1. git
+2. sbt
+3. AWS account
+   - S3
+   - EMR
+   - Redshift
+
 
 ## Build
 
-- `sbt assembly`
-- FAT JAR with all dependencies written to `target/scala-2.11/unseenstars-spark-assembly-1.0.jar`
-- Upload to hadoop master node `scp -i /path/to/unseenstars.pem /path/to/target/scala-2.11/unseenstars-spark-assembly-1.0.jar hadoop@MASTER_NODE_DNS:~`
-- SSH to hadoop master node `ssh -i /path/to/unseenstars.pem hadoop@MASTER_NODE_DNS`
-
+- Clone repository:<br/>
+`git clone git@github.com:hboylan/s3-processing-spark.git`
+- Compile assembly JAR:<br/>
+`cd s3-processing-spark`
+`sbt assembly`
+- Locate assembly JAR:<br/>
+`target/scala-2.11/unseenstars-spark-assembly-1.0.jar`
+- Deploy EMR cluster with Spark<br/>
+- Upload to hadoop master node:<br/>
+`scp -i /path/to/unseenstars.pem /path/to/target/scala-2.11/unseenstars-spark-assembly-1.0.jar hadoop@MASTER_NODE_DNS:~`
+- SSH to hadoop master node:<br/>
+`ssh -i /path/to/unseenstars.pem hadoop@MASTER_NODE_DNS`
 
 ## Run
 
